@@ -2000,6 +2000,27 @@ Crava::computeFaciesProb(SpatialWellFilter             * filteredlogs,
       std::vector<double> trend_max;
       FindSamplingMinMax(modelGeneral_->getTrendCubes().GetTrendCubeSampling(), trend_min, trend_max);
 
+      /*fprob_ = new FaciesProb(postAlpha_,
+                                postBeta_,
+                                postRho_,
+                                nfac,
+                                modelSettings->getPundef(),
+                                modelGeneral_->getPriorFacies(),
+                                modelGeneral_->getPriorFaciesCubes(),
+                                filteredlogs->getSigmae(),
+                                useFilter,
+                                wells_,
+                                nWells_,
+                                modelAVOstatic_->getFaciesEstimInterval(),
+                                simbox_->getdz(),
+                                false,
+                                modelSettings->getNoVsFaciesProb(),
+                                this,
+                                modelAVOdynamic_->getLocalNoiseScales(),
+                                modelSettings,
+                                likelihood,
+                                modelGeneral_->getFaciesNames());*/
+
       fprob_ = new FaciesProb(postAlpha_,
                                 postBeta_,
                                 postRho_,

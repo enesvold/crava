@@ -322,6 +322,7 @@ void PosteriorElasticPDF3D::ResampleAndWriteDensity(const std::string & fileName
 
   FFTGrid expDens(n1_, n2_, n3_, n1_, n2_, n3_);
   expDens.createRealGrid();
+  //expDens.setOutputFlags();
 
   double sum = 0;
   for(int k=0; k<n3_; k++) {
